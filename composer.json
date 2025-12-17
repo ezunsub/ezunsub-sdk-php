@@ -1,0 +1,35 @@
+{
+    "name": "ezunsub/ezunsub-sdk",
+    "description": "PHP SDK for EZUnsub - Contact suppression and unsubscribe management",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["ezunsub", "suppression", "unsubscribe", "email", "marketing", "compliance"],
+    "homepage": "https://github.com/ezunsub/ezunsub-sdk-php",
+    "authors": [
+        {
+            "name": "EZUnsub",
+            "email": "dev@ezunsub.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "guzzlehttp/psr7": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EZUnsub\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EZUnsub\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
